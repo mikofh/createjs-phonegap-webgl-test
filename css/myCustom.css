@@ -1,0 +1,14 @@
+body {
+    background-color: #d0e4fe;
+}
+
+#main {
+	position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+#leftside {
+	position: relative;
+	left:0px;
+}

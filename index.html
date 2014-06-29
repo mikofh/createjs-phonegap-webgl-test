@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kat2 med Jquery</title>
+
+<meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+<link rel="stylesheet" href="css/index.css" />
+
+<script src="lib/easeljs-0.7.1.min.js"></script>
+<script src="lib/tweenjs-0.5.1.min.js"></script>
+<script src="lib/movieclip-0.7.1.min.js"></script>
+<script src="lib/preloadjs-0.4.1.min.js"></script>
+
+<!-- WebGL specific classes -->
+<script type="text/javascript" src="lib/SpriteContainer.js"></script>
+<script type="text/javascript" src="lib/SpriteStage.js"></script>
+
+<script src="js/kat.js"></script>
+<script src="js/GameDev.js"></script>
+
+<script type="text/javascript">
+//jeg loader jquerymobile til sidst, så jeg sikrer at preload af billeder er kørt først
+//så virker både createjs og jquery helt sikkert.
+</script>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+</head>
+
+<body onload="app.newInitialize2();" style="background-color:#D4D4D4">
+	<div data-role="page">
+
+		<div data-role="header">
+			<h1>In header we can create the menu</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">
+			<div id="main">
+				<div id="leftside">
+				<canvas id="canvas" width="500" height="500" style="background-color:#FFFFFF"></canvas>
+			</div>
+			
+			</div>
+		</div><!-- /content -->
+
+		<div data-role="footer">
+			<h4>Footer can have company info</h4>
+		</div><!-- /footer -->
+	</div><!-- /page -->
+
+	
+</body>
+</html>
